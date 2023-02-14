@@ -1,5 +1,8 @@
 spring:
+#  스프링부트 3.0 부터 둘 이상의 세스토리지 구현제가 있을땐 Redis가 1순위로 고정
+#  session:
+#    store-type: redis
   data:
     redis:
-      host: ${host}
-      port: ${port}
+      host: localhost #${redisHost}
+      port: 6379 #${redisPort}
